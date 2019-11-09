@@ -12,7 +12,7 @@
 {% macro bottom_menu() %}
 
 <div class="section bottom-menu">
-	<a href="{{ config.base_url }}"><img class="top-image" src="/imgs/nm.svg" /></a>
+	<a href="/"><img class="top-image" src="/imgs/nm.svg" /></a>
 	<p>
 		&#183;
 		{% if config.extra.sam_menu and config.extra.sam_bottom_menu %}
@@ -34,7 +34,7 @@
 			{% endfor %}
 		{% endif %}
 		{% if config.extra.menu_home %}
-			<a href="{{ config.base_url }}">{{ config.extra.home | default(value="home") }}</a>
+			<a href="/">{{ config.extra.home | default(value="home") }}</a>
 		{% endif %}
 		&#183;
 	</p>
