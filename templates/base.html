@@ -6,14 +6,14 @@
 {% endblock htmltitle %}
 
 {% block body %}
-    <div class="wrap">
-        <div class="section" id="title">
-            {% block title %}{% endblock title %}
-        </div>
-        <div class="section" id="content">
-            {% block content %}{% endblock content %}
-        </div>
-        {{ macros::bottom_menu() }}
-        {{ macros::footer() }}
-    </div>
+	<div class="wrap">
+		{{ macros::bottom_menu() }}
+		<div class="section" id="title">
+			{% block title %}{% endblock title %}
+		</div>
+		<div class="section" id="content">
+			{% block content %}{% endblock content %}
+		</div>
+		{{ macros::footer() }}
+	</div>
 {% endblock body %}
